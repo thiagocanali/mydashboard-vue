@@ -19,7 +19,11 @@
       <!-- Cabeçalho (Navbar) -->
       <v-app-bar app>
         <!-- Ícone de Menu (para alternar a sidebar) -->
-        <v-app-bar-nav-icon @click="toggleDrawer"></v-app-bar-nav-icon>
+        <v-app-bar-nav-icon @click="toggleDrawer">
+          <!-- Ícone com cor destacada -->
+          <v-icon :style="{ color: '#ff5722' }">mdi-menu</v-icon> <!-- Cor laranja -->
+        </v-app-bar-nav-icon>
+
         <v-toolbar-title>Admin Dashboard</v-toolbar-title>
 
         <!-- Foto do usuário com dropdown -->
