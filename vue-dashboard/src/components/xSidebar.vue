@@ -1,5 +1,7 @@
 <template>
-    <div>dashboard</div>
+    <div class="h-full w-[300px] bg-gray-800">
+sidebar
+    </div>
 
 </template>
 
