@@ -2,7 +2,7 @@
     <div class="w-full h-full flex">
         <sidebar :dataOpenSideBar="openSideBar" />
         <div class="w-full h-full">
-            <headerTop :dataOpenSideBar="openSideBar" />
+            <headerTop :dataOpenSideBar="openSideBar" :clickHamburguer="toggleSidebar" />
             <div class="w-full h-[calc(100vh-50px)]">
                 <router-view>
                 </router-view>
@@ -22,6 +22,11 @@ export default {
             openSideBar: true
         }
 
+    },
+    methods: {
+        toggleSidebar() {
+            this.openSideBar = !this.openSideBar
+        }
     }
 
 }

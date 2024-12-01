@@ -5,6 +5,7 @@
                 <i class="pi pi-bars"></i>
             </div>
             <div class="py-2">
+                {{ dataOpenSideBar }}
                 <InputText type="text" v-model="value" class="h-[40px]" placeholder="Search..." />
             </div>
             <div class="flex space-x-3 items-center justify-center px-3">
