@@ -7,8 +7,11 @@
             <div class="py-2">
                 <InputText type="text" v-model="value" class="h-[40px]" placeholder="Search..." />
             </div>
-            <div>
-                <xAvatar icon="pi pi-user" class="mr-2" style="background-color: #9c27b0; color: #fff" shape="circle" />
+            <div class="flex space-x-3 items-center justify-center px-3">
+                <div class="text-md">Admin</div>
+                <xAvatar icon="pi pi-user" class="mr-2" style="background-color: #9c27b0; color: #fff" shape="circle" @click="toggle" aria-haspopup="true" aria-controls="overlay_menu" />
+                <xMenu id="overlay_menu" ref="menu" :model="items" :popup="true" />
+
             </div>
         </div>
     </div>
@@ -17,10 +20,37 @@
 
 <script>
 export default {
-
+    props: {
+        dataOpenSideBar: Boolean,
+        clickHambuger: Function
+    },
+    data() {
+        return {
+            items: [
+                {
+                    label: 'Logout',
+                    icon: 'pi pi-refresh',
+                    command: () => {
+                        this.$toast.add({ severity: 'success', summary: 'Updated', detail: 'Data Updated', life: 3000 });
+                    }
+                },
+                {
+                    label: 'Change Password',
+                    icon: 'pi pi-times',
+                    command: () => {
+                        this.$toast.add({ severity: 'warn', summary: 'Delete', detail: 'Data Deleted', life: 3000 });
+                    }
+                },
+            ]
+        }
+    },
+    methods: {
+        toggle(event) {
+            this.$refs.menu.toggle(event);
+        },
+    }
 
 }
-
 </script>
 
 <style></style>

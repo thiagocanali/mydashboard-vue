@@ -1,8 +1,8 @@
 <template>
     <div class="w-full h-full flex">
-        <sidebar />
+        <sidebar :dataOpenSideBar="openSideBar" />
         <div class="w-full h-full">
-            <headerTop />
+            <headerTop :dataOpenSideBar="openSideBar" />
             <div class="w-full h-[calc(100vh-50px)]">
                 <router-view>
                 </router-view>
@@ -17,6 +17,12 @@ import sidebar from './../../components/xSidebar.vue'
 
 export default {
     components: { headerTop, sidebar },
+    data() {
+        return {
+            openSideBar: true
+        }
+
+    }
 
 }
 

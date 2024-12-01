@@ -8,11 +8,15 @@ import 'primevue/resources/primevue.min.css';
 import 'primeicons/primeicons.css';
 import InputText from 'primevue/inputtext';
 import Avatar from 'primevue/avatar';
+import Menu from 'primevue/menu';
+import Tooltip from 'primevue/tooltip';
 
 const app = createApp(App);
 
 app.component('InputText', InputText);
 app.component('xAvatar', Avatar);
+app.component('xMenu', Menu);
+app.directive('tooltip', Tooltip);
 app.use(router);
 app.use(PrimeVue);
 
