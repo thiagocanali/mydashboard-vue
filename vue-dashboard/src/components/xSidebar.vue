@@ -1,5 +1,5 @@
 <template>
-    <div class="h-full w-[300px] bg-gray-800">
+    <div class="h-screen w-[300px] bg-gray-800">
 sidebar
     </div>
 

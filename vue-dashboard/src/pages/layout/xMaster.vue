@@ -1,7 +1,7 @@
 <template>
     <div class="w-full h-full flex">
         <sidebar />
-        <div>
+        <div class="w-full h-full">
             <headerTop />
             <div class="w-full h-[calc(100vh-50px)]">
                 <router-view>
