@@ -1,7 +1,7 @@
 <template>
     <div class="w-full bg-gray-100">
         <div class="flex justify-between items-center h-[50px]">
-            <div class="p-4 cursor-pointer hover:bg-gray-50">
+            <div class="p-4 cursor-pointer hover:bg-gray-50" @click="clickHambuger">
                 <i class="pi pi-bars"></i>
             </div>
             <div class="py-2">
@@ -10,7 +10,8 @@
             </div>
             <div class="flex space-x-3 items-center justify-center px-3">
                 <div class="text-md">Admin</div>
-                <xAvatar icon="pi pi-user" class="mr-2" style="background-color: #9c27b0; color: #fff" shape="circle" @click="toggle" aria-haspopup="true" aria-controls="overlay_menu" />
+                <xAvatar icon="pi pi-user" class="mr-2" style="background-color: #9c27b0; color: #fff" shape="circle"
+                    @click="toggle" aria-haspopup="true" aria-controls="overlay_menu" />
                 <xMenu id="overlay_menu" ref="menu" :model="items" :popup="true" />
 
             </div>
