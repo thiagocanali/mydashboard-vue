@@ -1,10 +1,12 @@
 <template>
-    <div class="w-full h-full">
+    <div class="w-full h-full flex">
         <sidebar />
-        <headerTop />
-        <div class="w-full h-[calc(100vh-50px)]">
-            <router-view>
-            </router-view>
+        <div>
+            <headerTop />
+            <div class="w-full h-[calc(100vh-50px)]">
+                <router-view>
+                </router-view>
+            </div>
         </div>
     </div>
 </template>
