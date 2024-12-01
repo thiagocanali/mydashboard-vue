@@ -1,15 +1,18 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-
 import './assets/app.css'
 import router from './router'
 import PrimeVue from 'primevue/config';
-
 import 'primevue/resources/themes/tailwind-light/theme.css';
 import 'primevue/resources/primevue.min.css';
 import 'primeicons/primeicons.css';
+import InputText from 'primevue/inputtext';
+import Avatar from 'primevue/avatar';
 
 const app = createApp(App);
+
+app.component('InputText', InputText);
+app.component('xAvatar', Avatar);
 app.use(router);
 app.use(PrimeVue);
 
