@@ -8,9 +8,9 @@
                 <InputText type="text" v-model="value" class="h-[40px]" placeholder="Search..." />
             </div>
             <div class="flex space-x-3 items-center justify-center px-3">
-                <div class="text-md">Admin</div>
-                <xAvatar icon="pi pi-user" class="mr-2" style="background-color: #9c27b0; color: #fff" shape="circle"
-                    @click="toggle" aria-haspopup="true" aria-controls="overlay_menu" />
+                <div class="text-md">User</div>
+                <xAvatar icon="pi pi-user" class="mr-2 cursor-pointer" style="background-color: #9c27b0; color: #fff"
+                    shape="circle" @click="toggle" aria-haspopup="true" aria-controls="overlay_menu" />
                 <xMenu id="overlay_menu" ref="menu" :model="items" :popup="true" />
 
             </div>
@@ -28,18 +28,26 @@ export default {
     data() {
         return {
             items: [
+
+                {
+                    label: 'Profile',
+                    icon: 'pi pi-user',
+                    command: () => {
+                        this.$toast.add({ severity: 'warn', summary: 'Delete', detail: 'Data Deleted', life: 3000 });
+                    }
+                },
+                {
+                    label: 'Settings',
+                    icon: 'pi pi-cog',
+                    command: () => {
+                        this.$toast.add({ severity: 'warn', summary: 'Delete', detail: 'Data Deleted', life: 3000 });
+                    }
+                },
                 {
                     label: 'Logout',
                     icon: 'pi pi-refresh',
                     command: () => {
                         this.$toast.add({ severity: 'success', summary: 'Updated', detail: 'Data Updated', life: 3000 });
-                    }
-                },
-                {
-                    label: 'Change Password',
-                    icon: 'pi pi-times',
-                    command: () => {
-                        this.$toast.add({ severity: 'warn', summary: 'Delete', detail: 'Data Deleted', life: 3000 });
                     }
                 },
             ]
