@@ -13,7 +13,7 @@
           <div class="text-center  text-white" v-show="dataOpenSideBar">
             <img src="https://avatars.githubusercontent.com/u/97021587?v=4"
               class="p-1 w-24 h-24 rounded-full ring-2 ring-gray-300 dark:ring-gray-500 mb-4" alt="Avatar" />
-            <h5 class="text-xl font-medium leading-tight mb-2"> My Name</h5>
+            <h5 class="text-xl font-medium leading-tight mb-2">My Name</h5>
             <p class="text-gray-500">Admin</p>
           </div>
         </div>
