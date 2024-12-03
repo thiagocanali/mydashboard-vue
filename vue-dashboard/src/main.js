@@ -10,12 +10,15 @@ import InputText from 'primevue/inputtext';
 import Avatar from 'primevue/avatar';
 import Menu from 'primevue/menu';
 import Tooltip from 'primevue/tooltip';
+import Card from 'primevue/card';
+
 
 const app = createApp(App);
 
 app.component('InputText', InputText);
 app.component('xAvatar', Avatar);
 app.component('xMenu', Menu);
+app.component('xCard', Card);
 app.directive('tooltip', Tooltip);
 app.use(router);
 app.use(PrimeVue);

@@ -22,7 +22,7 @@
               v-tooltip.right="'Dashboard'"></span> <span v-show="dataOpenSideBar">Dashboard</span></router-link>
         </div>
         <div class="   py-3 rounded-md cursor-pointer  text-gray-300 hover:text-white">
-          <router-link to="/user" class="px-2 flex space-x-2"><span class="pi pi-user " v-tooltip.right="'User'"></span>
+          <router-link to="/profile" class="px-2 flex space-x-2"><span class="pi pi-user " v-tooltip.right="'User'"></span>
             <span v-show="dataOpenSideBar">User</span></router-link>
         </div>
         <div class="   py-3 rounded-md cursor-pointer  text-gray-300 hover:text-white">
@@ -42,8 +42,8 @@
               v-tooltip.right="'Activation'"></span> <span v-show="dataOpenSideBar">Activation</span></router-link>
         </div>
         <div class="  py-3 rounded-md cursor-pointer text-gray-300 hover:text-white">
-          <div class="px-2 flex space-x-2"><span class="pi pi-slack" v-tooltip.right="'Setting'"></span> <span
-              v-show="dataOpenSideBar">Setting</span></div>
+          <router-link to="/settings" class="px-2 flex space-x-2"><span class="pi  pi-cog "
+              v-tooltip.right="'Settings'"></span> <span v-show="dataOpenSideBar">Settings</span></router-link>
         </div>
       </div>
       <div class="menu-man text-left px-2 justify-self-end whitespace-nowrap">

@@ -33,21 +33,24 @@ export default {
                     label: 'Profile',
                     icon: 'pi pi-user',
                     command: () => {
-                        this.$toast.add({ severity: 'warn', summary: 'Delete', detail: 'Data Deleted', life: 3000 });
+                        // this.$toast.add({ severity: 'warn', summary: 'Delete', detail: 'Data Deleted', life: 3000 });
+                        location.href = "/profile";
                     }
                 },
                 {
                     label: 'Settings',
                     icon: 'pi pi-cog',
                     command: () => {
-                        this.$toast.add({ severity: 'warn', summary: 'Delete', detail: 'Data Deleted', life: 3000 });
+                        // this.$toast.add({ severity: 'warn', summary: 'Delete', detail: 'Data Deleted', life: 3000 });
+                        location.href = "/settings";
                     }
                 },
                 {
                     label: 'Logout',
                     icon: 'pi pi-refresh',
                     command: () => {
-                        this.$toast.add({ severity: 'success', summary: 'Updated', detail: 'Data Updated', life: 3000 });
+                        // this.$toast.add({ severity: 'success', summary: 'Updated', detail: 'Data Updated', life: 3000 });
+                        
                     }
                 },
             ]
