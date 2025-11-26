@@ -1,6 +1,6 @@
 # vue-dashboard
 
-Dashboard-Admin.vue
+Dashboard-Admin.vue // Em desenvolvimento...
 
 ## Project setup
 ```
@@ -22,4 +22,4 @@ npm run build
 npm run lint
 ```
 
-## Github: @thiagocanali
+## Segue no insta: @thiagocanali
