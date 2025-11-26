@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkvue_dashboard"]=self["webpackChunkvue_dashboard"]||[]).push([[261],{9261:function(u,r,e){e.r(r),e.d(r,{default:function(){return l}});var n=e(6768);const a={class:"h-full w-full"};function s(u,r,e,s,t,c){return(0,n.uX)(),(0,n.CE)("div",a,"Profile")}var t={},c=e(1241);const f=(0,c.A)(t,[["render",s]]);var l=f}}]);
+//# sourceMappingURL=261.95e09140.js.map
